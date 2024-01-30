@@ -1,5 +1,6 @@
 package engine;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,16 +55,43 @@ public class ProxyPalvelu {
         }
     }
 
-    public void generateJsonOutput() {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String jsonOutput = gson.toJson(airportList);
-        System.out.println(jsonOutput);
+    public String generateJsonOutput() {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                .create();
+
+        LocalDateTime date = LocalDateTime.now();
+        TimeStamp timeStamp = new TimeStamp(date);
+
+        JsonOutput jsonOutput = new JsonOutput(timeStamp, airportList);
+        return gson.toJson(jsonOutput);
     }
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Starting Arkipaivareporter");
         ProxyPalvelu olio = new ProxyPalvelu();
         olio.aja();
-        olio.generateJsonOutput();
+        String jsonOutput = olio.generateJsonOutput();
+        System.out.println(jsonOutput);
+    }
+
+    static class JsonOutput {
+        private TimeStamp timeStamp;
+        private List<Airport> airportList;
+
+        public JsonOutput(TimeStamp timeStamp, List<Airport> airportList) {
+            this.timeStamp = timeStamp;
+            this.airportList = airportList;
+        }
+
+        public List<Airport> getAirportList() {
+            return this.airportList;
+        }
+
+        public TimeStamp getTimeStamp() {
+            return this.timeStamp;
+        }
+
     }
 }
