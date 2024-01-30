@@ -1,14 +1,16 @@
 package engine;
 
+import java.util.Map;
+
 public class Airport {
     private String pouserStatus;
     private String airportCode;
-    private FuelPrices fuels;
+    private Map<String, String> fuelPrices;
 
-    public Airport(String pouserStatus, String airportCode, FuelPrices fuels) {
+    public Airport(String pouserStatus, String airportCode, Map<String, String> fuelPrices) {
         this.pouserStatus = pouserStatus;
         this.airportCode = airportCode;
-        this.fuels = fuels;
+        this.fuelPrices = fuelPrices;
     }
 
     public String getAirportCode() {
@@ -19,7 +21,7 @@ public class Airport {
         return pouserStatus;
     }
 
-    public FuelPrices getFuels() {
-        return fuels;
+    public Map<String, String> getFuelPrices() {
+        return fuelPrices;
     }
 }

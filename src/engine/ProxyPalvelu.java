@@ -2,7 +2,9 @@ package engine;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -25,28 +27,49 @@ public class ProxyPalvelu {
             Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel").get();
 
             Elements rows = doc.select("table tbody tr");
+
+            // Extract header row to get titles. Adapts to changes in the table structure
+            Elements headerRow = doc.select("table th");
+            List<String> titles = new ArrayList<>();
+            for (int i = 2; i < headerRow.size(); i++) {
+                try {
+                    String title = headerRow.get(i).text().trim().toUpperCase();
+                    titles.add(title);
+                } catch (IndexOutOfBoundsException e) {
+                    System.out.println("Index out of bounds while extracting titles");
+                    e.printStackTrace();
+                }
+            }
+
             for (Element row : rows) {
                 Elements columns = row.select("td");
                 if (columns.size() >= 6) {
                     String pouserStatus = columns.get(0).text().trim();
                     String airportCode = columns.get(1).text().trim();
-                    String avgasPrice = columns.get(2).text().trim().replace("\"", "").replace(",", ".");
-                    String jetA1Price = columns.get(3).text().trim().replace("\"", "").replace(",", ".");
-                    String mogasPrice = columns.get(4).text().trim().replace("\"", "").replace(",", ".");
 
-                    if (avgasPrice.equalsIgnoreCase("n/a") || !avgasPrice.matches("-?\\d+(\\.\\d+)?")) {
-                        avgasPrice = "NA";
-                    }
-                    if (jetA1Price.equalsIgnoreCase("n/a") || !jetA1Price.matches("-?\\d+(\\.\\d+)?")) {
-                        jetA1Price = "NA";
-                    }
-                    if (mogasPrice.equalsIgnoreCase("n/a") || !mogasPrice.matches("-?\\d+(\\.\\d+)?")) {
-                        mogasPrice = "NA";
+                    Map<String, String> fuelPricesMap = new HashMap<>();
+                    for (int i = 2; i < columns.size(); i++) {
+                        try {
+                            String fuelType = titles.get(i - 2);
+                            String fuelPrice = columns.get(i).text().trim().replace("\"", "").replace(",", ".");
+
+                            if (!fuelType.isEmpty()) {
+
+                                if (fuelPrice.matches("-?\\d+(\\.\\d+)?") || !fuelPrice.equalsIgnoreCase("n/a")) {
+
+                                    fuelPrice = fuelPrice.equals("-") ? "NA" : fuelPrice;
+                                    fuelPricesMap.put(fuelType, fuelPrice);
+                                }
+                            }
+                        } catch (IndexOutOfBoundsException e) {
+                            System.out.println("Index out of bounds while processing row: " + row);
+                            e.printStackTrace();
+                        }
                     }
 
-                    FuelPrices fuelPrices = new FuelPrices(avgasPrice, jetA1Price, mogasPrice);
-                    Airport airport = new Airport(pouserStatus, airportCode, fuelPrices);
+                    Airport airport = new Airport(pouserStatus, airportCode, fuelPricesMap);
                     airportList.add(airport);
+
                 }
             }
 
