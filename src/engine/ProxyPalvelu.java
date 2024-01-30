@@ -1,96 +1,71 @@
 package engine;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.text.DateFormat;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.TimeZone;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
-import org.apache.commons.io.FileUtils;
-
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class ProxyPalvelu {
 
-	public void aja() {
+    private List<Airport> airportList;
 
-		try {
-			// Create connection
-			URL url = new URL("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel");
-			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-			connection.setRequestMethod("GET");
-			connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+    public ProxyPalvelu() {
+        this.airportList = new ArrayList<>();
+    }
 
-			//connection.setRequestProperty("Content-Length", Integer.toString(urlParameter.getBytes().length));
-			connection.setRequestProperty("Content-Language", "en-US");
+    public void aja() {
+        try {
+            Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel").get();
 
-			connection.setUseCaches(false);
-			connection.setDoOutput(true);
+            Elements rows = doc.select("table tbody tr");
+            for (Element row : rows) {
+                Elements columns = row.select("td");
+                if (columns.size() >= 6) {
+                    String pouserStatus = columns.get(0).text().trim();
+                    String airportCode = columns.get(1).text().trim();
+                    String avgasPrice = columns.get(2).text().trim().replace("\"", "").replace(",", ".");
+                    String jetA1Price = columns.get(3).text().trim().replace("\"", "").replace(",", ".");
+                    String mogasPrice = columns.get(4).text().trim().replace("\"", "").replace(",", ".");
 
-			// Send request
-			DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
-			//wr.writeBytes(urlParameters);
-			wr.close();
+                    if (avgasPrice.equalsIgnoreCase("n/a") || !avgasPrice.matches("-?\\d+(\\.\\d+)?")) {
+                        avgasPrice = "NA";
+                    }
+                    if (jetA1Price.equalsIgnoreCase("n/a") || !jetA1Price.matches("-?\\d+(\\.\\d+)?")) {
+                        jetA1Price = "NA";
+                    }
+                    if (mogasPrice.equalsIgnoreCase("n/a") || !mogasPrice.matches("-?\\d+(\\.\\d+)?")) {
+                        mogasPrice = "NA";
+                    }
 
-			// Get Response
-			InputStream is = connection.getInputStream();
-			BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-			StringBuilder response = new StringBuilder();
+                    FuelPrices fuelPrices = new FuelPrices(avgasPrice, jetA1Price, mogasPrice);
+                    Airport airport = new Airport(pouserStatus, airportCode, fuelPrices);
+                    airportList.add(airport);
+                }
+            }
 
-			String line;
-			while ((line = rd.readLine()) != null) {
-				response.append(line);
-				System.out.println(line);
-				response.append('\r');
-			}
-			rd.close();
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		
-		} finally {
-				//if (connection != null) {
-				//	connection.disconnect();
-				//}
-		}
-	}
-	
-	
-	public static void main(String[] args) throws InterruptedException {
-		System.out.println("Starting Arkipaivareporter");
-		ProxyPalvelu olio = new ProxyPalvelu();
-		olio.aja();
-	}
-	
-	
-	
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void generateJsonOutput() {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        for (Airport airport : airportList) {
+            String jsonOutput = gson.toJson(airport);
+            System.out.println(jsonOutput);
+        }
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("Starting Arkipaivareporter");
+        ProxyPalvelu olio = new ProxyPalvelu();
+        olio.aja();
+        olio.generateJsonOutput();
+    }
 }
