@@ -56,10 +56,8 @@ public class ProxyPalvelu {
 
     public void generateJsonOutput() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        for (Airport airport : airportList) {
-            String jsonOutput = gson.toJson(airport);
-            System.out.println(jsonOutput);
-        }
+        String jsonOutput = gson.toJson(airportList);
+        System.out.println(jsonOutput);
     }
 
     public static void main(String[] args) throws InterruptedException {
