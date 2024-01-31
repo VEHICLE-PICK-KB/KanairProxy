@@ -47,6 +47,10 @@ public class ProxyPalvelu {
                     String pouserStatus = columns.get(0).text().trim();
                     String airportCode = columns.get(1).text().trim();
 
+                    if (!airportCode.matches("[A-Za-z0-9]+")) {
+                        continue;
+                    }
+
                     Map<String, String> fuelPricesMap = new HashMap<>();
                     for (int i = 2; i < columns.size(); i++) {
                         try {
@@ -59,6 +63,10 @@ public class ProxyPalvelu {
 
                                     fuelPrice = fuelPrice.equals("-") ? "NA" : fuelPrice;
                                     fuelPricesMap.put(fuelType, fuelPrice);
+                                }
+                                else {
+                                    // Lisää tyhjä hinta, jos tietoja ei ole saatavilla
+                                    fuelPricesMap.put(fuelType, "NA");
                                 }
                             }
                         } catch (IndexOutOfBoundsException e) {
