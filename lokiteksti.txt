@@ -1,0 +1,42 @@
+[2024-02-06 08:14:18] Virhe haettaessa tietoja: The supplied URL, 'kkkkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 08:14:18] Virhe haettaessa tietoja: The supplied URL, 'kkkkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 08:14:18] Tietojen haku epäonnistui.
+[2024-02-06 08:27:10] Virhe haettaessa tietoja: The supplied URL, 'kkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 08:27:10] Virhe haettaessa tietoja: The supplied URL, 'kkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 08:27:10] Tietojen haku epäonnistui.
+[2024-02-06 08:33:07] Virhe haettaessa tietoja: The supplied URL, 'kkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 08:33:07] Virhe haettaessa tietoja: The supplied URL, 'kkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 08:33:07] Tietojen haku epäonnistui.
+[2024-02-06 08:33:55] Virhe haettaessa tietoja: Connection refused: no further information
+[2024-02-06 08:33:57] Virhe haettaessa tietoja: Connection refused: no further information
+[2024-02-06 08:33:57] Tietojen haku epäonnistui.
+[2024-02-06 08:34:09] Virhe haettaessa tietoja: Connection refused: no further information
+[2024-02-06 08:34:11] Virhe haettaessa tietoja: Connection refused: no further information
+[2024-02-06 08:34:11] Tietojen haku epäonnistui.
+[2024-02-06 08:37:33] Tietojen haku onnistui.
+[2024-02-06 08:38:26] Tietojen haku onnistui.
+[2024-02-06 08:46:00] Tietojen haku onnistui.
+[2024-02-06 08:47:08] Tietojen haku onnistui.
+[2024-02-06 08:47:47] Tietojen haku onnistui.
+[2024-02-06 08:52:25] Tietojen haku onnistui.
+[2024-02-06 08:53:45] Tietojen haku onnistui.
+[2024-02-06 08:56:16] Tietojen haku onnistui.
+[2024-02-06 09:00:39] Tietojen haku onnistui.
+[2024-02-06 09:01:31] Tietojen haku onnistui.
+[2024-02-06 09:01:43] Tietojen haku onnistui.
+[2024-02-06 09:02:00] Tietojen haku onnistui.
+[2024-02-06 09:03:01] Tietojen haku onnistui.
+[2024-02-06 09:04:46] Virhe haettaessa tietoja: The supplied URL, 'kkkkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 09:04:46] Virhe haettaessa tietoja: The supplied URL, 'kkkkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 09:04:46] Tietojen haku epäonnistui.
+[2024-02-06 09:10:24] Virhe haettaessa tietoja: The supplied URL, 'kkkkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 09:10:24] Virhe haettaessa tietoja: The supplied URL, 'kkkkkk', is malformed. Make sure it is an absolute URL, and starts with 'http://' or 'https://'. See https://jsoup.org/cookbook/extracting-data/working-with-urls
+[2024-02-06 09:10:24] Tietojen haku epäonnistui.
+[2024-02-06 09:11:17] Tietojen haku onnistui.
+[2024-02-06 09:16:45] Virhe haettaessa tietoja: www.kanair.fi
+[2024-02-06 09:16:45] Virhe haettaessa tietoja: www.kanair.fi
+[2024-02-06 09:16:45] Tietojen haku epäonnistui.
+[2024-02-06 09:17:11] Virhe haettaessa tietoja: www.kanair.fi
+[2024-02-06 09:17:11] Virhe haettaessa tietoja: www.kanair.fi
+[2024-02-06 09:17:11] Tietojen haku epäonnistui.
+[2024-02-06 09:22:16] Tietojen haku onnistui.
