@@ -46,11 +46,12 @@ public class ErrorEmail {
 
         if (errorCount == 96) {
             EmailSender.sendEmail();
+            resetCounter();
         }
     }
 
     public void resetCounter() {
-        updateCounter("94");
+        updateCounter("95");
     }
 
     private void updateCounter(String errorCountString) {
