@@ -21,6 +21,7 @@ public class ProxyPalvelu {
 
     private List<Airport> airportList;
     private boolean fetchOnnistui = false;
+    ErrorEmail errorEmail = new ErrorEmail();
 
     public ProxyPalvelu() {
         this.airportList = new ArrayList<>();
@@ -83,6 +84,7 @@ public class ProxyPalvelu {
                     }
                 }
                 kirjoitaLokiin("Tietojen haku onnistui.");
+                errorEmail.resetCounter();
                 fetchOnnistui = true;
             } catch (Exception e) {
                 System.out.println("Virhe haettaessa tietoja: " + e.getMessage());
