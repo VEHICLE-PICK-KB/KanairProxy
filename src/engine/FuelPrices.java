@@ -1,4 +1,4 @@
-
+package engine;
 
 public class FuelPrices {
     private String avgas;

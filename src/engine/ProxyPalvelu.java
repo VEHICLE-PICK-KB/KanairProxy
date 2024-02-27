@@ -1,3 +1,4 @@
+package engine;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -30,7 +31,8 @@ public class ProxyPalvelu {
 
         while (!fetchOnnistui && yritykset < 2) {
             try {
-                Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel").get();
+                Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel")
+                        .get();
                 airportList.clear();
                 Elements rows = doc.select("table tbody tr");
 
@@ -69,7 +71,7 @@ public class ProxyPalvelu {
                                     } else {
                                         fuelPricesMap.put(fuelType, "NA");
                                     }
-                                } 
+                                }
                             } catch (IndexOutOfBoundsException e) {
                                 System.out.println("Index out of bounds while processing row: " + row);
                                 e.printStackTrace();
@@ -129,7 +131,7 @@ public class ProxyPalvelu {
 
         JsonOutput jsonOutput = new JsonOutput(timeStamp, airportList);
         String jsonData = gson.toJson(jsonOutput);
-        
+
         tallennaJsonTiedostoon(jsonData, "data.json");
         tallennaJsonTiedostoon(jsonData, "data.json.bak");
 
