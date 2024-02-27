@@ -32,7 +32,7 @@ public class ProxyPalvelu {
 
         while (!fetchOnnistui && yritykset < 2) {
             try {
-                Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel")
+                Document doc = Jsoup.connect("https://www.kanasair.fi/category/10/ilmailupolttoaineet--aviation-fuel")
                         .get();
                 airportList.clear();
                 Elements rows = doc.select("table tbody tr");
@@ -95,6 +95,7 @@ public class ProxyPalvelu {
         if (!fetchOnnistui) {
             System.out.println("Tietojen haku epäonnistui.");
             kirjoitaLokiin("Tietojen haku epäonnistui.");
+            errorEmail.addError();
         }
     }
 
