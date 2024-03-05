@@ -1,0 +1,11 @@
+FuelPrices.class
+LocalDateTimeAdapter.class
+engine/EmailSender.class
+TimeStamp.class
+Airport.class
+ProxyPalvelu.class
+ProxyPalvelu$JsonOutput.class
+WebBotHandler.class
+WebBotHandler$ProxyPrintStream.class
+engine/EmailSender$1.class
+engine/ErrorEmail.class

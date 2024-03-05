@@ -1,0 +1,151 @@
+{
+  "timeStamp": {
+    "timeStamp": "2024-02-27 09:10:18"
+  },
+  "airportList": [
+    {
+      "pouserStatus": "-",
+      "airportCode": "EFHF",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "NA"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFHV",
+      "fuelPrices": {
+        "JET A-1": "1.488",
+        "MOGAS": "2.480",
+        "AVGAS 100LL": "3.472"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFRY",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "2.480",
+        "AVGAS 100LL": "3.472"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFTU",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.534"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFMI",
+      "fuelPrices": {
+        "JET A-1": "1.410",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.534"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFJM",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.534"
+      }
+    },
+    {
+      "pouserStatus": "Out of Service",
+      "airportCode": "EFSA",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.534"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFJY",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.596"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFYL",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.596"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFPU",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.596"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFKS",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.596"
+      }
+    },
+    {
+      "pouserStatus": "OK",
+      "airportCode": "EFRO",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "3.658"
+      }
+    },
+    {
+      "pouserStatus": "Not In Use",
+      "airportCode": "EFSO",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "Back in use 2024/05"
+      }
+    },
+    {
+      "pouserStatus": "closed",
+      "airportCode": "EFKU",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "NA"
+      }
+    },
+    {
+      "pouserStatus": "closed",
+      "airportCode": "EFKI",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "NA"
+      }
+    },
+    {
+      "pouserStatus": "closed",
+      "airportCode": "EFIV",
+      "fuelPrices": {
+        "JET A-1": "NA",
+        "MOGAS": "NA",
+        "AVGAS 100LL": "NA"
+      }
+    }
+  ]
+}
