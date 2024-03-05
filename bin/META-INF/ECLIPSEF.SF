@@ -1,0 +1,1006 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: w6uUJ0+WZqOVF3VMkpTKCjIQ5WA=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: B89bgTM7F0OgU4zIZPwEbF/W/2M=
+
+Name: org/mozilla/javascript/regexp/REProgState.class
+SHA1-Digest: uTgEy1yETJ+SAokFPiSgSy3b0I0=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/Namespace.class
+SHA1-Digest: vxDI3todZpk7MA8Zsu2xJMDe+b8=
+
+Name: org/mozilla/javascript/tools/debugger/FileTextArea.class
+SHA1-Digest: oe88YbCUXvouTWrtlxiumnz6MU0=
+
+Name: org/mozilla/classfile/ByteCode.class
+SHA1-Digest: YeDV+wRYKZc8OIIrG3YhQuB1wgI=
+
+Name: org/mozilla/javascript/xmlimpl/XMLCtor.class
+SHA1-Digest: JMC4YJjZ1HyfGSJlgabxYeawm/E=
+
+Name: org/mozilla/javascript/optimizer/OptFunctionNode.class
+SHA1-Digest: g1XI6lawIIhdX9ntEi+NUGggKZs=
+
+Name: org/mozilla/javascript/tools/debugger/ContextWindow.class
+SHA1-Digest: XlurLP6rjgLZXU7/EskdSmBLAjI=
+
+Name: org/mozilla/javascript/SecurityController$1.class
+SHA1-Digest: mRgH9ttFd5fogT+pY0odgV4nt04=
+
+Name: org/mozilla/javascript/Token.class
+SHA1-Digest: QjSS6hAnMC8/5iwJctmuBANXdO4=
+
+Name: org/mozilla/javascript/WrappedException.class
+SHA1-Digest: vWmmgLFksL8v1OqG30y7IVla5pM=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Filter$4.class
+SHA1-Digest: yI9YESDHvALN5yu3p93PqJzYA3s=
+
+Name: org/mozilla/classfile/ConstantPool.class
+SHA1-Digest: iSCbZ1whS/dQDctjV4u0TDhD27A=
+
+Name: org/mozilla/javascript/ContextFactory$Listener.class
+SHA1-Digest: WTeDK+LINpo8tMNUZJCoLvN8Qv4=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/NamespaceHelper.class
+SHA1-Digest: u084RW/gVg6FpL3c6oP+/GED+0A=
+
+Name: org/mozilla/javascript/NativeFunction.class
+SHA1-Digest: 9ITFxDVKaGqQDCA5sstds+SOubk=
+
+Name: org/mozilla/javascript/ContextListener.class
+SHA1-Digest: AVhD/32fvUOEOUJEJx2JBAR7FJE=
+
+Name: org/mozilla/javascript/RegExpProxy.class
+SHA1-Digest: 29Q8yLKyaidhH91gXLDBCZ2kNv8=
+
+Name: org/mozilla/javascript/Interpreter$1.class
+SHA1-Digest: HvSOO5Ep75f4pR0mzE+2PFcWmU4=
+
+Name: org/mozilla/javascript/Function.class
+SHA1-Digest: VbFomNXzftfgNyt0yPS9zyjon7o=
+
+Name: org/mozilla/javascript/UniqueTag.class
+SHA1-Digest: xc51Cz19sAzb2mX30Apx0AV1fHE=
+
+Name: org/mozilla/javascript/regexp/RECompiled.class
+SHA1-Digest: S5c9Z1taHCLiN2eH90byrrHXTAA=
+
+Name: org/mozilla/javascript/tools/debugger/Dim$1.class
+SHA1-Digest: rtrNskFAZFhWBVTqCPhbFxdtMtk=
+
+Name: org/mozilla/javascript/PolicySecurityController$2.class
+SHA1-Digest: cE8Sf+EfYDPY0cR6Ubx6wHjrDBo=
+
+Name: org/mozilla/javascript/CompilerEnvirons.class
+SHA1-Digest: HgJfMTEes+aJq8y1waR6IO5eOIQ=
+
+Name: org/mozilla/javascript/Undefined.class
+SHA1-Digest: lHha7qMS/y6sI6mC2QABHMqFArM=
+
+Name: org/mozilla/javascript/NativeBoolean.class
+SHA1-Digest: FYMVe4GPN7yPYBrDO+btL16XwJw=
+
+Name: org/mozilla/javascript/NativeIterator.class
+SHA1-Digest: CL+Aph9v2qU0qHsntNoBmGM2iIk=
+
+Name: org/mozilla/javascript/BeanProperty.class
+SHA1-Digest: asFSdWxkfwaWeGLSWSOWvMN6Ulc=
+
+Name: org/mozilla/javascript/tools/debugger/SwingGui.class
+SHA1-Digest: IrzGbrUany/VLa0OvG++GlNRO1I=
+
+Name: org/mozilla/javascript/JavaMembers.class
+SHA1-Digest: 0eBwhl5iNw91YZzPRsf14sdRzpw=
+
+Name: org/mozilla/javascript/tools/shell/Main.class
+SHA1-Digest: yJoMFFgiFwd61nSVWP2dmpwsHiE=
+
+Name: org/mozilla/javascript/Parser$1.class
+SHA1-Digest: K+mubOCVeVvZiwkpIvFc3XVrcAg=
+
+Name: org/mozilla/javascript/tools/ToolErrorReporter.class
+SHA1-Digest: Q2p4gKXJFRJRvlYmcpbdIBnSvN0=
+
+Name: org/mozilla/javascript/xmlimpl/XMLWithScope.class
+SHA1-Digest: MYNxRq0dLLNguqU2/fa4P0ANAfc=
+
+Name: org/mozilla/javascript/ContinuationPending.class
+SHA1-Digest: cPHCGcTOjn+9Qy2fGxpshWMoSaY=
+
+Name: org/mozilla/javascript/SecureCaller$2.class
+SHA1-Digest: PuRUKHfiWLD6hIrp2d4rmqsGEM8=
+
+Name: org/mozilla/javascript/WrapFactory.class
+SHA1-Digest: zftrknNF87SrS4apovhtVaWYMZ0=
+
+Name: org/mozilla/javascript/ObjToIntMap$Iterator.class
+SHA1-Digest: u2xO2pe92dE15qnpgDjBYkgueaM=
+
+Name: org/mozilla/javascript/InterpretedFunction.class
+SHA1-Digest: j7YEZlLWTRw1g8tHxoZ386rX/kU=
+
+Name: org/mozilla/javascript/regexp/REGlobalData.class
+SHA1-Digest: +Er5je8DSiCqIyYkcEupcGfTI8U=
+
+Name: org/mozilla/javascript/FunctionObject.class
+SHA1-Digest: lr3YsSxw5EJtjjPuEhTRCsZC1xQ=
+
+Name: org/mozilla/javascript/xmlimpl/XmlProcessor$RhinoSAXErrorHandler
+ .class
+SHA1-Digest: 9P+Ug/de6pvD7xbV1knCoicG4hY=
+
+Name: org/mozilla/javascript/ScriptableObject$GetterSlot.class
+SHA1-Digest: /0SeASRMQio4ikmJOiwpcOX/jIo=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/AbstractCellEdit
+ or.class
+SHA1-Digest: XrWZgYMWu4X/q1L0poX+hKIKJ58=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Filter.class
+SHA1-Digest: pBj/2jECHmMduY71VbqktltMjOI=
+
+Name: org/mozilla/javascript/SecurityController.class
+SHA1-Digest: a8QOL7cK3Eg/rY6+YcpitgCQYZQ=
+
+Name: org/mozilla/javascript/NativeJavaPackage.class
+SHA1-Digest: uaxqDxDADhHpBJcouG0UpvHBvl8=
+
+Name: org/mozilla/javascript/tools/debugger/VariableModel$VariableNode
+ .class
+SHA1-Digest: SHCm5XC6gK2uUvclB4FCvsYd8zQ=
+
+Name: org/mozilla/javascript/NativeError.class
+SHA1-Digest: BUImWGQg7BZZHDley2aHvgcSPZE=
+
+Name: org/mozilla/javascript/xmlimpl/XMLLibImpl.class
+SHA1-Digest: 1x3b4v14fjprFHDWtOxCypYlzKc=
+
+Name: org/mozilla/javascript/tools/shell/JavaPolicySecurity.class
+SHA1-Digest: FGLog9lJzjlquwZEv50VdihOrCU=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Filter$1.class
+SHA1-Digest: U+hvIYZE5pEbjRa1pEMEZY9PSDI=
+
+Name: org/mozilla/javascript/Parser$ParserException.class
+SHA1-Digest: eMOW70wsm7zI9nuusk2j/CxYuu0=
+
+Name: org/mozilla/javascript/tools/shell/PipeThread.class
+SHA1-Digest: 03uCvZlaO8cSxCURsuwgMWpUhhE=
+
+Name: org/mozilla/javascript/Context$1.class
+SHA1-Digest: gJgpWiZlwzldwiqjnQg/k0K58zE=
+
+Name: org/mozilla/javascript/NativeGenerator.class
+SHA1-Digest: qBMLmJjehItSD/114HF5AZZfIa0=
+
+Name: org/mozilla/javascript/xmlimpl/XML.class
+SHA1-Digest: HO2oMrWWQQlpgy/d7+x29Cih74U=
+
+Name: org/mozilla/javascript/tools/shell/Environment.class
+SHA1-Digest: /3iFqmReNfhnQK0gy+XWWwEWe98=
+
+Name: org/mozilla/javascript/regexp/REBackTrackData.class
+SHA1-Digest: z9v2C/vGnGminxKQyHzvavOL2k0=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLLibImpl.class
+SHA1-Digest: MneON1IlObKaLu97P4jKgJmyE9c=
+
+Name: org/mozilla/javascript/ContextFactory.class
+SHA1-Digest: 9bCFM7sFzFxWO+rbHls2D7hs4zM=
+
+Name: org/mozilla/javascript/Decompiler.class
+SHA1-Digest: v8CoJObZAw7wyz4ad3BoD771aGM=
+
+Name: org/mozilla/javascript/tools/idswitch/CodePrinter.class
+SHA1-Digest: 1C9IFbi2ZBxvHQXlGI0g3h4h+sc=
+
+Name: org/mozilla/javascript/ObjArray.class
+SHA1-Digest: e+lu3LCKYr8QXTa4QpKLQHZunaI=
+
+Name: org/mozilla/javascript/serialize/ScriptableInputStream.class
+SHA1-Digest: XAUyOIWozgvWMkH7BM3g1QL5PMg=
+
+Name: org/mozilla/javascript/tools/shell/ConsoleWriter.class
+SHA1-Digest: D3zIwfblAfUnt7T/X4k8f1Cd5G8=
+
+Name: org/mozilla/javascript/debug/DebuggableObject.class
+SHA1-Digest: SU+q6QLkxWas36otdj8OZWYSp9I=
+
+Name: org/mozilla/javascript/ScriptRuntime$DefaultMessageProvider.clas
+ s
+SHA1-Digest: xOUn1Dvx8mH2l6cK1fv8ajB48ZI=
+
+Name: org/mozilla/javascript/xmlimpl/XMLObjectImpl.class
+SHA1-Digest: AGWJap/nVM8dUbLLAui8wV+1lns=
+
+Name: org/mozilla/javascript/tools/debugger/Dim$SourceInfo.class
+SHA1-Digest: oQLald0GfE0eyogHDS9mhQ49ePw=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLCtor.class
+SHA1-Digest: s15fskpuQnA6wyDCHEi5nuHOr9U=
+
+Name: org/mozilla/javascript/tools/debugger/FileHeader.class
+SHA1-Digest: /mXjhQ4/YHO7lFRZxIt/p08IKAw=
+
+Name: org/mozilla/javascript/tools/debugger/SwingGui$2.class
+SHA1-Digest: dCI7XOQDkoQHVec59pJ49QIqyGc=
+
+Name: org/mozilla/javascript/tools/debugger/JSInternalConsole.class
+SHA1-Digest: Ob/7gDpyeQIwK3fDgt/7ynit4nM=
+
+Name: org/mozilla/javascript/NativeGenerator$GeneratorClosedException.
+ class
+SHA1-Digest: gJxMVhl5+cjDZEPi5yJQ8J/ls4k=
+
+Name: org/mozilla/javascript/tools/shell/JSConsole$2.class
+SHA1-Digest: Xcyhvjhtlod1msoO3w0OTnpTDV4=
+
+Name: org/mozilla/javascript/IdScriptableObject.class
+SHA1-Digest: KUhHOlTtXW++HP4gJ2gJXYfnKjw=
+
+Name: org/mozilla/javascript/NativeNumber.class
+SHA1-Digest: oKdOFpHzkELaEWsV+uLgfcDGasw=
+
+Name: org/mozilla/javascript/Node$Jump.class
+SHA1-Digest: 3LDUQvy3xNjVEkJ5xkPFqhzrqrY=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/QName.class
+SHA1-Digest: +Dt7rJUFZHS33ZHTXy1ca+e8EJw=
+
+Name: org/mozilla/javascript/NativeScript.class
+SHA1-Digest: nlDO36DVpEfgO+Nk7uzKXfOvAFo=
+
+Name: org/mozilla/javascript/tools/debugger/Main.class
+SHA1-Digest: DWUygA9oZodQ/QRBu3L1dZaPWA0=
+
+Name: org/mozilla/javascript/SecurityUtilities$2.class
+SHA1-Digest: WqQhNIBRCw3uzP2xsM+ncPV1Idc=
+
+Name: org/mozilla/javascript/DefaultErrorReporter.class
+SHA1-Digest: hOOBLx9DjLpzvY0XVGiXCyjrDok=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Namespace.class
+SHA1-Digest: kODV7h76e3YR9oBCJ7N2y1ZqclM=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/TreeTableModelAd
+ apter$1.class
+SHA1-Digest: ZsFM3JV1SR4/eLJQ67nZqxSTPhk=
+
+Name: org/mozilla/javascript/xml/XMLObject.class
+SHA1-Digest: gs3RX396Sr8seWeqXljHidUY5ck=
+
+Name: org/mozilla/javascript/IdFunctionCall.class
+SHA1-Digest: xqUYYDUniSSB1EEC3eoz/eS85FM=
+
+Name: org/mozilla/javascript/JavaScriptException.class
+SHA1-Digest: IqNstQvZUXXMgQv/IpcFlCtecag=
+
+Name: org/mozilla/javascript/xmlimpl/Namespace.class
+SHA1-Digest: xlnHA8qDF+QEkDZ8dIfpc9WTr7c=
+
+Name: org/mozilla/javascript/xmlimpl/XmlProcessor.class
+SHA1-Digest: cwoPr2D1+YLhHA/kIVWcOwqM4Dw=
+
+Name: org/mozilla/javascript/tools/shell/JavaPolicySecurity$2.class
+SHA1-Digest: LlJqO+Nj3o+XdSF/lUc4YPbD75Q=
+
+Name: org/mozilla/javascript/regexp/GlobData.class
+SHA1-Digest: DZq8FR0GmAS1VI/T37FJ8uu4nEU=
+
+Name: org/mozilla/javascript/tools/shell/QuitAction.class
+SHA1-Digest: kexdKEfPADXVcUZITvtc+MDoNLU=
+
+Name: org/mozilla/javascript/NativeGenerator$CloseGeneratorAction.clas
+ s
+SHA1-Digest: h/4a5dH9XgBiBYRRKrzLmA973K4=
+
+Name: org/mozilla/javascript/tools/debugger/Dim$FunctionSource.class
+SHA1-Digest: TJsGpMzRZlYgF3x465vMHCL7Qww=
+
+Name: org/mozilla/javascript/tools/debugger/Menubar.class
+SHA1-Digest: URO5wEKAOlAx25AUZUuC7fBsyMk=
+
+Name: org/mozilla/javascript/jdk13/VMBridge_jdk13$1.class
+SHA1-Digest: CdRNUi6h0epiVNLc8SJS0P5zXcw=
+
+Name: org/mozilla/javascript/IdScriptableObject$PrototypeValues.class
+SHA1-Digest: r4VKb+0e7DJkzs9JoH6ZIeANnAA=
+
+Name: org/mozilla/javascript/xmlimpl/XmlProcessor$1.class
+SHA1-Digest: 1QRDb4Vxr+uHE+FE1xmpA6ZfU6k=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/mozilla/javascript/SecureCaller.class
+SHA1-Digest: Bi2rr9NPSvKxgWWd2+BPFBi7/8U=
+
+Name: about_files/MPL-1.1.txt
+SHA1-Digest: R7vjJduoLOplud0HRjSwvqhRUck=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XML$XScriptAnnotation.c
+ lass
+SHA1-Digest: 3msxhyVHTRIUYOCQ7i7omE/Sgt4=
+
+Name: org/mozilla/javascript/JavaAdapter$2.class
+SHA1-Digest: 358j6BISR9D0Ta5YFB+TFyca9YU=
+
+Name: org/mozilla/javascript/regexp/SubString.class
+SHA1-Digest: xz8pwdkEvX7hQQLJOh6ZPOz+XHU=
+
+Name: org/mozilla/classfile/ClassFileField.class
+SHA1-Digest: nYsuNSFm6IxSNndSL/BmHpwI74I=
+
+Name: org/mozilla/javascript/optimizer/OptRuntime$GeneratorState.class
+SHA1-Digest: fJSg7AdAaxI4N4wAikldmGuCIGI=
+
+Name: org/mozilla/javascript/tools/debugger/Evaluator.class
+SHA1-Digest: XLMO+KNBwX2jRopTH+Az/F4GKfg=
+
+Name: org/mozilla/javascript/tools/debugger/EvalWindow.class
+SHA1-Digest: cnuhnfqeaHCBCXMiAteXYd0ByT4=
+
+Name: org/mozilla/javascript/FunctionNode.class
+SHA1-Digest: wsboaX7TfGV41kxFLqYHVCYdRvA=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XML.class
+SHA1-Digest: vPt7UcXntmJEoF4hT6Iz9YSY3BY=
+
+Name: org/mozilla/javascript/RhinoException.class
+SHA1-Digest: gRuBQfbJjMwu8XUKOijLVQksrU8=
+
+Name: org/mozilla/javascript/Kit$ComplexKey.class
+SHA1-Digest: ho2GFcjsWLV9KEUVF77FuyuflnA=
+
+Name: org/mozilla/javascript/NativeMath.class
+SHA1-Digest: SvxXM/iTIujJ4W9IaaI54FABetQ=
+
+Name: org/mozilla/javascript/optimizer/OptTransformer.class
+SHA1-Digest: bVE/Poyxf9C96eSMtEvwn4XDpfo=
+
+Name: org/mozilla/javascript/JavaAdapter$JavaAdapterSignature.class
+SHA1-Digest: eE2PDuPQpYuBCmCMlShwSoTqWOQ=
+
+Name: org/mozilla/javascript/Node.class
+SHA1-Digest: t3hbCD7HCDpITPDbdyZUp4td5g0=
+
+Name: org/mozilla/javascript/tools/debugger/MoreWindows$MouseHandler.c
+ lass
+SHA1-Digest: GC2wPOvD7KSBYkRtJE70Op4pbVc=
+
+Name: org/mozilla/javascript/Node$StringNode.class
+SHA1-Digest: whM/7RDjc+xcqYXNWLi8u/vUnVI=
+
+Name: org/mozilla/javascript/EcmaError.class
+SHA1-Digest: ZAOvoA3sABaiCjrHu1Dwl/IU60k=
+
+Name: org/mozilla/javascript/RhinoException$1.class
+SHA1-Digest: b8/cULS1qHQUeZaHnZZTnxtMdG0=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Filter$3.class
+SHA1-Digest: 6X1cqv1WfRLh/AVsdntMVkyfedI=
+
+Name: org/mozilla/javascript/Script.class
+SHA1-Digest: 5za2bb+TbSZoDCx0wKCfpkUhRsU=
+
+Name: plugin.properties
+SHA1-Digest: pqxxGYE99Unc784VTELt9xJAoQY=
+
+Name: org/mozilla/javascript/optimizer/OptRuntime$1.class
+SHA1-Digest: yz0Lnxanb9BMTrPIHmMfg+9W20I=
+
+Name: org/mozilla/javascript/tools/debugger/Dim.class
+SHA1-Digest: f4OIh0B8aN/tLfq81tCYjzZ+7hM=
+
+Name: org/mozilla/javascript/ScriptableObject$Slot.class
+SHA1-Digest: qU9z6V2jIO9bsIo8s2D7buQk85Y=
+
+Name: org/mozilla/javascript/tools/debugger/ContextWindow$2.class
+SHA1-Digest: JVjEREoo2zXOL92X6OD3bzfhcuU=
+
+Name: org/mozilla/javascript/ScriptOrFnNode.class
+SHA1-Digest: fCaHLSkrJUbakZtSiCIYIEXoaMw=
+
+Name: org/mozilla/javascript/PolicySecurityController$1.class
+SHA1-Digest: 4YxIdbMoY4/ly97l/LuXKqIYAdA=
+
+Name: org/mozilla/javascript/debug/Debugger.class
+SHA1-Digest: c8vgLgXH6cDreArGa5cgrvTHAqA=
+
+Name: org/mozilla/javascript/MemberBox.class
+SHA1-Digest: TnNZX8w2gRHuvPxHtEzCpWfDYa4=
+
+Name: org/mozilla/javascript/tools/jsc/Main.class
+SHA1-Digest: wJci+Y+fUsArEWmJG9XkWeg5ed8=
+
+Name: org/mozilla/javascript/DToA.class
+SHA1-Digest: uMQvJ0pFS0qn94ui1tcfuCkrBiI=
+
+Name: org/mozilla/javascript/InterfaceAdapter$1.class
+SHA1-Digest: +3pU565g606VaglslS/DjV2d2Ys=
+
+Name: org/mozilla/javascript/ClassDefinitionException.class
+SHA1-Digest: o/DEkVX5qx+fHvpRemEoGYaevtk=
+
+Name: org/mozilla/javascript/NativeDate.class
+SHA1-Digest: piS7D484wAK4z+n4cVuH7Pjgyuo=
+
+Name: org/mozilla/javascript/tools/debugger/GuiCallback.class
+SHA1-Digest: tpY7naKt1iw2+JZzaEZuzf5b6DQ=
+
+Name: org/mozilla/javascript/TokenStream.class
+SHA1-Digest: WM707OSgc7DzC0mG2cXo2pOOd+Q=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/JTreeTable$ListT
+ oTreeSelectionModelWrapper.class
+SHA1-Digest: 0CUZgmvBqjLY4xDC3eiwdk1cQ3I=
+
+Name: org/mozilla/javascript/tools/debugger/RunProxy.class
+SHA1-Digest: f0m7Yei1G9QapU/EJ1PoO+CeZzo=
+
+Name: org/mozilla/javascript/ObjToIntMap.class
+SHA1-Digest: NGURw+yOZCnYDPSX/VNcotRD378=
+
+Name: org/mozilla/javascript/SecureCaller$1.class
+SHA1-Digest: pcn44QAZu8rfidrwsvW+VC2OgWA=
+
+Name: org/mozilla/javascript/ScriptRuntime$MessageProvider.class
+SHA1-Digest: W/V/xx5pRc7vG2EHFzqd+HMvksY=
+
+Name: org/mozilla/javascript/resources/Messages.properties
+SHA1-Digest: 55/yR+o6phTUeP5rvC765e29NiM=
+
+Name: org/mozilla/javascript/UintMap.class
+SHA1-Digest: fPax7hMyIWw06p7+4I6sK9Rwe0E=
+
+Name: org/mozilla/javascript/Interpreter$CallFrame.class
+SHA1-Digest: G30enDbWLmoy5k9GXkCvsR46VwQ=
+
+Name: org/mozilla/javascript/debug/DebuggableScript.class
+SHA1-Digest: SMab33E2pS5o00PQaCPrHb4LRjU=
+
+Name: org/mozilla/classfile/ExceptionTableEntry.class
+SHA1-Digest: aOPgh/knXT6QSlqnhqoWZei3L5c=
+
+Name: org/mozilla/javascript/tools/debugger/Dim$DimIProxy.class
+SHA1-Digest: /nlRxwBOoZrFn6+Kc5aJ2LDA1LY=
+
+Name: org/mozilla/javascript/Callable.class
+SHA1-Digest: wAzyemOkV36jRrbkCKnBXbaj0ew=
+
+Name: org/mozilla/javascript/SecurityUtilities.class
+SHA1-Digest: vLQsGK1QnIdjG9RZk1Goy5wnqzg=
+
+Name: org/mozilla/javascript/optimizer/BodyCodegen$FinallyReturnPoint.
+ class
+SHA1-Digest: e1FSjzF7KbGCOgya05mTlvCHdGM=
+
+Name: org/mozilla/javascript/tools/shell/ConsoleWrite.class
+SHA1-Digest: o/wjxkt2POAFHcqxPATPeMoRNVQ=
+
+Name: org/mozilla/javascript/RefCallable.class
+SHA1-Digest: k8SIirc89lJz54YnJD4VIgH4Sqg=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/TreeTableModelAd
+ apter.class
+SHA1-Digest: qtvP6Yrx638DPllWE94FJgkpMZA=
+
+Name: org/mozilla/javascript/tools/shell/JavaPolicySecurity$Loader.cla
+ ss
+SHA1-Digest: 4DiuNiKjJGNzY/u10+meP1O5vT0=
+
+Name: org/mozilla/javascript/tools/shell/ShellLine.class
+SHA1-Digest: nMv8yWx5BEUfXK727nwU/GoHtdg=
+
+Name: org/mozilla/javascript/tools/debugger/MoreWindows$1.class
+SHA1-Digest: iwefcu+ysa11lPj/KnPDZ5EWv+w=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/TreeTableModelAd
+ apter$3.class
+SHA1-Digest: 9pX73iRX+sleMAgX1IXof4HxGXM=
+
+Name: org/mozilla/javascript/xmlimpl/XMLList.class
+SHA1-Digest: wX2GfDvybjz+oGVCVhMnl0fQ3fs=
+
+Name: org/mozilla/javascript/tools/shell/ConsoleTextArea.class
+SHA1-Digest: +O0k24i1DtqdHB4Meemxhz714i0=
+
+Name: org/mozilla/javascript/Node$1.class
+SHA1-Digest: 4vSjsMGv7BeSNdHhnW8DLOaP4Cs=
+
+Name: org/mozilla/javascript/Interpreter$ContinuationJump.class
+SHA1-Digest: BcszzkQEyacdCos1e9sKCorgVBQ=
+
+Name: org/mozilla/javascript/tools/debugger/MyTableModel.class
+SHA1-Digest: M+xrjX7XqzNMfokQgL3GRyxvQkc=
+
+Name: org/mozilla/javascript/tools/debugger/VariableModel.class
+SHA1-Digest: x1qBb/ZDOmDmyEp3hvzQqzPcAWU=
+
+Name: org/mozilla/javascript/xmlimpl/QName.class
+SHA1-Digest: JBf1F9sNm0SUwva6cbUu0sWJXC0=
+
+Name: org/mozilla/javascript/InterpreterData.class
+SHA1-Digest: ybAqFZLpzMlgVTx8n6L7rueo/gU=
+
+Name: org/mozilla/classfile/ClassFileMethod.class
+SHA1-Digest: aaHluseTaiZGWmCWVq/xg3tn5mg=
+
+Name: org/mozilla/javascript/ErrorReporter.class
+SHA1-Digest: ERPojwh7VMjJQNvumZXSGMzsN8k=
+
+Name: org/mozilla/javascript/Parser.class
+SHA1-Digest: t0LXPElq5vXVQRPAPMvtlX/4+oA=
+
+Name: org/mozilla/javascript/tools/debugger/VariableModel$1.class
+SHA1-Digest: DuVQyNvjCZWObdxxsx+cQVrsp8I=
+
+Name: org/mozilla/javascript/tools/debugger/EvalTextArea.class
+SHA1-Digest: /2siUs2bUCYwUPe3HKLMGukHLAM=
+
+Name: org/mozilla/javascript/EvaluatorException.class
+SHA1-Digest: aZzucYEuxv1qAPwYooCmzssiSek=
+
+Name: org/mozilla/javascript/tools/shell/Global$1.class
+SHA1-Digest: AdCvSo7pPMLYVCi+JG5rYrmlgfw=
+
+Name: org/mozilla/javascript/Ref.class
+SHA1-Digest: 4uqRIzq3ZvLnDQbbQnUJdifyfVU=
+
+Name: org/mozilla/javascript/Wrapper.class
+SHA1-Digest: 9Rv2RaKQ57hJ2wFqZkrHIlvhzFM=
+
+Name: org/mozilla/javascript/Scriptable.class
+SHA1-Digest: OlFcsdsX/jhJP8iusc0RiJMh2vw=
+
+Name: org/mozilla/javascript/NativeGenerator$CloseGeneratorAction$1.cl
+ ass
+SHA1-Digest: t8ikslNdTPzDtQq3/SK31MJ11pE=
+
+Name: org/mozilla/javascript/Kit.class
+SHA1-Digest: GDe4tEZyQxuBYMLK4+jE2wjLXdY=
+
+Name: org/mozilla/javascript/Node$PropListItem.class
+SHA1-Digest: UtNXXxBb2wvuWNW5tjz47M8zhx8=
+
+Name: org/mozilla/classfile/ClassFileWriter.class
+SHA1-Digest: E781EgnAU1LElfM/y47TIqDoxh8=
+
+Name: org/mozilla/javascript/ScriptRuntime$1.class
+SHA1-Digest: miqulx2w/UrxC/YhvKCI/kXZWVw=
+
+Name: org/mozilla/javascript/tools/shell/JSConsole.class
+SHA1-Digest: PhmXaRnyOsfsqRY0WsspOwZhCJk=
+
+Name: org/mozilla/javascript/tools/SourceReader.class
+SHA1-Digest: rWv9dS492AzE29BtU/7vMBS8+gI=
+
+Name: org/mozilla/javascript/tools/debugger/SwingGui$1.class
+SHA1-Digest: 7uFqjWgv9ZYYtuIrJwIe4OVQ58w=
+
+Name: org/mozilla/javascript/tools/debugger/MoreWindows.class
+SHA1-Digest: aQPE1Kz6mLg72M+tavAG5fV6pmc=
+
+Name: org/mozilla/javascript/tools/debugger/Main$IProxy.class
+SHA1-Digest: ZtcUYupq76Vjh8BOF85UU/ExCys=
+
+Name: org/mozilla/javascript/tools/shell/JSConsole$1.class
+SHA1-Digest: qRW7y1UkGM4Fc/RHx1Cp7W/guZ8=
+
+Name: org/mozilla/javascript/xml/XMLLib$Factory$1.class
+SHA1-Digest: DmDNBVX4DyLrTkewr0x60cNAj38=
+
+Name: org/mozilla/javascript/NotAFunctionException.class
+SHA1-Digest: EUjv3GJAEKboL8SU0vsTLzzO4Dg=
+
+Name: org/mozilla/javascript/xmlimpl/XMLName.class
+SHA1-Digest: pPjDwbdW2cEt6vdkI2/y6sqaF2w=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$InternalList.class
+SHA1-Digest: rh0OyRirJV2UnlUIrN0Q55WqrTg=
+
+Name: org/mozilla/javascript/regexp/RegExpImpl.class
+SHA1-Digest: Qz0Xpz8htxM7WyzhOnKJ0gkh8FE=
+
+Name: org/mozilla/javascript/Context.class
+SHA1-Digest: hYwgPHAwFs0mAvf3HDnBxHUvsBE=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$XmlNodeUserDataHandler.cl
+ ass
+SHA1-Digest: zvmoWVqCy4DJNaFHVFjeXS77jao=
+
+Name: org/mozilla/javascript/VMBridge.class
+SHA1-Digest: xYVl1zOgtdMTc6JBD9PrVotnB0U=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/JTreeTable$TreeT
+ ableCellRenderer.class
+SHA1-Digest: Mvv6fBxJlGJ0bxFdLUMxItOi4/0=
+
+Name: org/mozilla/javascript/resources/Messages_fr.properties
+SHA1-Digest: oPvlZiBik8Bp6aI4dXzaEum0Aec=
+
+Name: org/mozilla/javascript/tools/shell/JavaPolicySecurity$ContextPer
+ missions.class
+SHA1-Digest: JgBVS9cePs9qLBpPWvVLx2/+Jjo=
+
+Name: org/mozilla/javascript/tools/debugger/Dim$ContextData.class
+SHA1-Digest: odGo/Jj0ltjM8A49mFJqC4hVZH4=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLWithScope.class
+SHA1-Digest: nOGUeMMR+kZDVAtoDwxMI7hRvVc=
+
+Name: org/mozilla/javascript/ScriptRuntime$IdEnumeration.class
+SHA1-Digest: WY1jasnVkMfwgCUYYPEk1nQ8Gu4=
+
+Name: org/mozilla/javascript/ConstProperties.class
+SHA1-Digest: +cdpVb7HWE1SH6Z+StYVQEjXjt8=
+
+Name: org/mozilla/javascript/optimizer/DataFlowBitSet.class
+SHA1-Digest: vrIE8F9EVpLDyLf2jBl5RkB3DX0=
+
+Name: org/mozilla/javascript/SecurityUtilities$1.class
+SHA1-Digest: j0I6GIlFywTtO9iXVUOB8nldbyg=
+
+Name: org/mozilla/javascript/NodeTransformer.class
+SHA1-Digest: MuFwd0FK7XO6sxdEDhDDZy0JmuE=
+
+Name: org/mozilla/javascript/Interpreter$GeneratorState.class
+SHA1-Digest: YpIRcypVs4u0zvHaDbU86sddbAw=
+
+Name: org/mozilla/javascript/NativeString.class
+SHA1-Digest: 80ZNK+QploTRIWRjaoSMeG6YGfY=
+
+Name: org/mozilla/javascript/BaseFunction.class
+SHA1-Digest: OPN322h5ztskHMT1pEJf+R/uEYk=
+
+Name: org/mozilla/javascript/PropertyException.class
+SHA1-Digest: UwQlL1pHT7lNMXZ7eTvkfaJFF0g=
+
+Name: org/mozilla/javascript/LazilyLoadedCtor.class
+SHA1-Digest: ven5ZCMlg0nZhwyZnEVvX/e3zyA=
+
+Name: org/mozilla/javascript/regexp/RENode.class
+SHA1-Digest: LcsHMKq26gy7ZnqpEI/WLkOgkmQ=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Filter$5.class
+SHA1-Digest: 7ciFUUYC1F902LVKt3YKBBYxMKY=
+
+Name: org/mozilla/javascript/SecureCaller$SecureClassLoaderImpl.class
+SHA1-Digest: 33c7IdVgt281sjVddnrlQBb1NiA=
+
+Name: org/mozilla/javascript/Delegator.class
+SHA1-Digest: oBvojr0wDzSAi+kz2iOcDlXJSRs=
+
+Name: org/mozilla/javascript/tools/shell/JavaPolicySecurity$1.class
+SHA1-Digest: 7WwHL33JD+Q7++tmHzNG7KezqRo=
+
+Name: org/mozilla/javascript/ScriptRuntime$NoSuchMethodShim.class
+SHA1-Digest: ClquPyPBdiKAkC6R3+ZnWni7kQo=
+
+Name: org/mozilla/javascript/NativeGlobal.class
+SHA1-Digest: +fEBokNG8buDENmz1F0qAeI9E7w=
+
+Name: org/mozilla/javascript/NativeIterator$StopIteration.class
+SHA1-Digest: cmbTdqI9zqE09t3/roKAXNVykpk=
+
+Name: org/mozilla/javascript/PolicySecurityController$3.class
+SHA1-Digest: k3IZ8qh0+MXwAHV2bEOuLSZ1mNw=
+
+Name: org/mozilla/javascript/serialize/ScriptableOutputStream$PendingL
+ ookup.class
+SHA1-Digest: UJHdKfAEcL/6oGW/eMPOrKkac5o=
+
+Name: org/mozilla/javascript/DefiningClassLoader.class
+SHA1-Digest: wFpHwGETRPIIKAxcujwWRYUJhz0=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLList$AnnotationList.
+ class
+SHA1-Digest: PsEtuSN54lM6BKm+/mcyKOHX8J8=
+
+Name: about.html
+SHA1-Digest: vdSc5lYtlz00BwKBn797ts53894=
+
+Name: org/mozilla/javascript/JavaAdapter$1.class
+SHA1-Digest: iY/LZRKEdsGisKD+bM0B1FyBSP4=
+
+Name: org/mozilla/javascript/optimizer/Optimizer.class
+SHA1-Digest: T8fpi/CGz04Xuui+OOKt6az7gOA=
+
+Name: org/mozilla/javascript/tools/debugger/ScopeProvider.class
+SHA1-Digest: IntQvAkaZlicyWv3NQJWI1sY5pU=
+
+Name: org/mozilla/javascript/xml/XMLLib$Factory.class
+SHA1-Digest: ejF4GLbHEmODRFq9IsnJ1eUEzRk=
+
+Name: org/mozilla/javascript/tools/shell/Main$IProxy.class
+SHA1-Digest: HeuHxb+EfPEe9S7fdkFBRWKJSag=
+
+Name: org/mozilla/javascript/SecureCaller$3.class
+SHA1-Digest: DeBiNoBAW+ZAIaoP+FwZID4FJvY=
+
+Name: org/mozilla/javascript/NativeJavaConstructor.class
+SHA1-Digest: eu1qhr7FVhZriYYRs1t2Jfias6U=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode.class
+SHA1-Digest: N+/0yILO6sBpMyrb7I5umfj/fDE=
+
+Name: org/mozilla/javascript/tools/idswitch/SwitchGenerator.class
+SHA1-Digest: i7IQImYS5Xb4MC51YpJ5gCu5ksk=
+
+Name: org/mozilla/javascript/optimizer/Codegen.class
+SHA1-Digest: eVmM3gcS+YH+H2p4dSUT4TFLpPs=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLList.class
+SHA1-Digest: a5NfXYBLKGXQlPHA4xX8GLECfkE=
+
+Name: org/mozilla/javascript/tools/debugger/FindFunction.class
+SHA1-Digest: w4RKvNGkIMbvE9sWjKKNgxOp6jQ=
+
+Name: org/mozilla/javascript/tools/idswitch/FileBody$ReplaceItem.class
+SHA1-Digest: S+dblqd0Thz5hX6oBeTch6CaujA=
+
+Name: org/mozilla/javascript/ScriptableObject.class
+SHA1-Digest: 0cDuSj6kn2Qy+abo23lX+OG0j1M=
+
+Name: org/mozilla/javascript/tools/debugger/JSInternalConsole$1.class
+SHA1-Digest: MuYFJ2HZifl3cUzfgMvD5EJykwg=
+
+Name: org/mozilla/javascript/FieldAndMethods.class
+SHA1-Digest: +++cz7F/mDg0DbIRCdND3Id5WC0=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/JTreeTable$ListT
+ oTreeSelectionModelWrapper$ListSelectionHandler.class
+SHA1-Digest: N27ro9QNOBzyM15yjotbCHWQlDg=
+
+Name: org/mozilla/javascript/tools/debugger/FindFunction$1.class
+SHA1-Digest: lljw5cMlsHDNk+dqfBspi7cxiu4=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Filter$2.class
+SHA1-Digest: UlvbvWKtKLjjzPJ/1QU1xYTCwdM=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$QName.class
+SHA1-Digest: PjeIdaiL3yF1vy++VNIp0XMoL5I=
+
+Name: org/mozilla/javascript/PolicySecurityController.class
+SHA1-Digest: S141XvO272qD/57VHbm6wm2wLTg=
+
+Name: org/mozilla/javascript/tools/shell/JavaPolicySecurity$ContextPer
+ missions$1.class
+SHA1-Digest: CQ5zRbAWvslq5TzOsk+tGB45bOE=
+
+Name: org/mozilla/javascript/jdk15/VMBridge_jdk15.class
+SHA1-Digest: 5CUUbAcwmGhQWU26HZz2pESiF5Q=
+
+Name: org/mozilla/javascript/tools/debugger/ContextWindow$1.class
+SHA1-Digest: +m+LgurMZni6lKAL4fl1UZJgtUI=
+
+Name: org/mozilla/javascript/NativeCall.class
+SHA1-Digest: y+ejzz6NGBAw+MxYkKLZH7mD8lY=
+
+Name: org/mozilla/javascript/tools/debugger/FilePopupMenu.class
+SHA1-Digest: Gf+QUeP8awsRPwuSCd/UrteG1+w=
+
+Name: org/mozilla/javascript/InterfaceAdapter.class
+SHA1-Digest: fJvxm2bqONUv21zwg/L+VITMpMA=
+
+Name: org/mozilla/javascript/tools/debugger/FileWindow.class
+SHA1-Digest: 9A6uKj4sR2lSv9eU7reVfy1GgXw=
+
+Name: org/mozilla/javascript/tools/idswitch/FileBody.class
+SHA1-Digest: pUc07gdIYVqV+/TSvwWOi36RvrA=
+
+Name: org/mozilla/javascript/ScriptRuntime.class
+SHA1-Digest: JbbL08KFbutaeD5eOfBUadP/o5k=
+
+Name: org/mozilla/javascript/tools/shell/Runner.class
+SHA1-Digest: mgKBSy+psbeb2WG5cYi0X4Q/ty4=
+
+Name: org/mozilla/javascript/Arguments.class
+SHA1-Digest: ukuvMZq4lFLXlJYBsND/B0PILBw=
+
+Name: org/mozilla/javascript/xml/XMLLib.class
+SHA1-Digest: 9i9vrU2nCqEEeuzwZ5GtVAiK/tE=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLName.class
+SHA1-Digest: mRM6B9/1oEBNvK1AoIL3PN7DSfg=
+
+Name: org/mozilla/javascript/ClassCache.class
+SHA1-Digest: Cyit9U8llSNpnpZYBHPrGx98sRQ=
+
+Name: org/mozilla/javascript/NativeJavaTopPackage.class
+SHA1-Digest: Hc6kT0iyQHTfry4nU+Eg0o1EUtE=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/JTreeTable$TreeT
+ ableCellEditor.class
+SHA1-Digest: N+lNj/QbWcdJFjA8ToCH8HAVTLc=
+
+Name: org/mozilla/javascript/regexp/CompilerState.class
+SHA1-Digest: JUN5veSMFR6rzttnW+UR7q3XWWo=
+
+Name: org/mozilla/javascript/NativeContinuation.class
+SHA1-Digest: Gley10fb6LjNIqdeRg8SiG5d0Hg=
+
+Name: org/mozilla/javascript/NativeJavaClass.class
+SHA1-Digest: t0o4Wl5+KpMktKsMhZqRLNp99L4=
+
+Name: org/mozilla/javascript/serialize/ScriptableOutputStream.class
+SHA1-Digest: IRD6R/jYDBgp7CNx283f+o9/ILg=
+
+Name: org/mozilla/javascript/regexp/NativeRegExp.class
+SHA1-Digest: +F/Ml/k0hRExOxB43iTYHpeSn4w=
+
+Name: org/mozilla/javascript/NativeJavaObject.class
+SHA1-Digest: flBYsaQfQE7/NYvI/yBvE8w1x14=
+
+Name: org/mozilla/javascript/xmlimpl/XmlNode$Namespaces.class
+SHA1-Digest: f7bnMB2gzd1401UC2aXy45XP1kM=
+
+Name: org/mozilla/javascript/tools/resources/Messages.properties
+SHA1-Digest: TiI2OSyuSxIVeAvoY9JPEvzVYGs=
+
+Name: org/mozilla/javascript/optimizer/OptRuntime.class
+SHA1-Digest: SqJqeg/84AOQ0OKWYHhBSkVYfDs=
+
+Name: org/mozilla/javascript/Evaluator.class
+SHA1-Digest: TQnq+oFPtsGVN6HllY55CqZqlYE=
+
+Name: org/mozilla/javascript/tools/shell/ParsedContentType.class
+SHA1-Digest: hfgqN+WmzQ4GRJGgISMQubfqpJQ=
+
+Name: org/mozilla/javascript/tools/shell/FlexibleCompletor.class
+SHA1-Digest: jjP+w258VCwSblz9xUjv+Vpyy/Y=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/TreeTableModel.c
+ lass
+SHA1-Digest: RNMnkSCzsrqRMUMY8PzTVBhzbXs=
+
+Name: org/mozilla/javascript/optimizer/Block.class
+SHA1-Digest: +slyRZ1WJt7DGtRCJlAL6ALwiV0=
+
+Name: org/mozilla/javascript/tools/idswitch/IdValuePair.class
+SHA1-Digest: iraaJJqX4ZVu7kQXnpzkHRgk/1s=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/LogicalEquality.class
+SHA1-Digest: QPrGnPD7Ql/rGpOFTnTNv8lTbi8=
+
+Name: org/mozilla/javascript/Interpreter.class
+SHA1-Digest: hMqkcqsSTAenl/DBaAAgDdMOr8Y=
+
+Name: org/mozilla/javascript/tools/debugger/MyTreeTable.class
+SHA1-Digest: YGJd9TfmisZP9BvO0fJTaetjvDg=
+
+Name: org/mozilla/javascript/tools/debugger/Dim$StackFrame.class
+SHA1-Digest: UMN8TI3GizZEz9Sh9bzRg9GAEbc=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/TreeTableModelAd
+ apter$2.class
+SHA1-Digest: VOrE+6/Dc4+c4/x2OZeEXx/hjC0=
+
+Name: org/mozilla/javascript/tools/shell/SecurityProxy.class
+SHA1-Digest: BdlbGOI4Y6tpVwk+8Um77vuaf88=
+
+Name: org/mozilla/classfile/ClassFileWriter$ClassFileFormatException.c
+ lass
+SHA1-Digest: d0GUzaQf4Wlh5gUCTlObYfkDcmA=
+
+Name: org/mozilla/javascript/tools/debugger/treetable/JTreeTable.class
+SHA1-Digest: kulQJ6fmUMAicTMsm5v5pRLyS/s=
+
+Name: org/mozilla/javascript/optimizer/Block$1.class
+SHA1-Digest: oVDjrJ9ZWbnvOpxjciyhShckeL4=
+
+Name: org/mozilla/javascript/jdk13/VMBridge_jdk13.class
+SHA1-Digest: Mu0qNUvR/oaZowO3SmLx22FBlCY=
+
+Name: org/mozilla/javascript/NativeJavaArray.class
+SHA1-Digest: pNMFL8hCAjfFT0aRUO/o+xzbMg0=
+
+Name: org/mozilla/javascript/IRFactory.class
+SHA1-Digest: GdyN6JJrGqBNocRtawpCR8b/jeI=
+
+Name: org/mozilla/javascript/Node$Scope.class
+SHA1-Digest: 0kW8LxavzJvIAEXAQcSoKtyPfSI=
+
+Name: org/mozilla/javascript/NativeArray.class
+SHA1-Digest: hHCCgg+1J226TCgsNhbuN+6aJqA=
+
+Name: org/mozilla/javascript/regexp/RECharSet.class
+SHA1-Digest: 56kBdqMarxEYDTcXzbgMyjX8ssc=
+
+Name: org/mozilla/javascript/ClassShutter.class
+SHA1-Digest: 8LnhvmWWFjL6Oz1L/qwhsrpO9Zw=
+
+Name: org/mozilla/javascript/ContextAction.class
+SHA1-Digest: rLDEee/f/9GRq3qTBmIUjXez8Fc=
+
+Name: org/mozilla/javascript/tools/idswitch/Main.class
+SHA1-Digest: RrfEGONnDMYbJ2XJHSbEALsOSA8=
+
+Name: org/mozilla/javascript/debug/DebugFrame.class
+SHA1-Digest: HT1N1Kzs+yIjs+0NLqbLww6pMRY=
+
+Name: org/mozilla/javascript/tools/shell/Global.class
+SHA1-Digest: iNkzHJ/cK09H2W5PdNKCKyRUGmg=
+
+Name: org/mozilla/javascript/PolicySecurityController$Loader.class
+SHA1-Digest: cfJghnN4paXh0FRP6CGw3jlfNEw=
+
+Name: org/mozilla/javascript/SpecialRef.class
+SHA1-Digest: qqj496SPGYH0lBC0hwdsFwO3HfQ=
+
+Name: org/mozilla/javascript/NativeJavaMethod.class
+SHA1-Digest: Y0TfO8eckRiDL3PWV+3kpR3WM08=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XMLObjectImpl.class
+SHA1-Digest: GfVsjq9eWOlNHINU4SgH9pSsI0o=
+
+Name: org/mozilla/javascript/GeneratedClassLoader.class
+SHA1-Digest: ql8/XwMe27yu/C07M4ZNc8jCbnU=
+
+Name: org/mozilla/javascript/JavaAdapter.class
+SHA1-Digest: Y4EVYYmb4ohUUHgd2Q7B/fQcvGc=
+
+Name: org/mozilla/javascript/tools/debugger/FindFunction$MouseHandler.
+ class
+SHA1-Digest: SzhjfpNIAmPSbndqx/05b5xWoVk=
+
+Name: org/mozilla/javascript/tools/debugger/ContextWindow$1$1.class
+SHA1-Digest: yYtgbqnOqj/QZEMIFHEJXby0eyk=
+
+Name: org/mozilla/javascript/ImporterTopLevel.class
+SHA1-Digest: K4r1QhpdvzufdTF5G8PhB2aUwVc=
+
+Name: org/mozilla/javascript/Synchronizer.class
+SHA1-Digest: SlWEj94OfBM2t+5W8eXK9KTz6kg=
+
+Name: org/mozilla/classfile/FieldOrMethodRef.class
+SHA1-Digest: Pttm+MkyvZx6lB/qranXTw+IfCs=
+
+Name: org/mozilla/javascript/optimizer/Block$FatBlock.class
+SHA1-Digest: t2OlnMFNHZJ3zyzRdy/6fMc9Bk8=
+
+Name: org/mozilla/javascript/PolicySecurityController$SecureCaller.cla
+ ss
+SHA1-Digest: gw+vE5JD++PLkQa+9O+sBjMTvXE=
+
+Name: org/mozilla/javascript/tools/shell/ShellContextFactory.class
+SHA1-Digest: 22+QD6OdKmSWZ4/wBCfdILcyCHY=
+
+Name: org/mozilla/javascript/regexp/NativeRegExpCtor.class
+SHA1-Digest: rk4MNFEg8eG0bDy+2MSqy1WYVyI=
+
+Name: org/mozilla/javascript/Node$Symbol.class
+SHA1-Digest: rQpBJhYms178YQw1q04n4IeYaxo=
+
+Name: org/mozilla/javascript/xml/impl/xmlbeans/XML$NamespaceDeclaratio
+ ns.class
+SHA1-Digest: JRNIwy5yKLI0WLKC5yeb+murfj8=
+
+Name: org/mozilla/javascript/optimizer/ClassCompiler.class
+SHA1-Digest: rRgeWaNjM/W9/JjOSAqPitKsI6o=
+
+Name: org/mozilla/javascript/tools/debugger/MessageDialogWrapper.class
+SHA1-Digest: W4M6c+Ym4DakHjsB1aTa9VF7b7Q=
+
+Name: org/mozilla/javascript/IdFunctionObject.class
+SHA1-Digest: F5IB3iLPTBs/+/lqwiXcw7sACbk=
+
+Name: org/mozilla/javascript/NativeIterator$WrappedJavaIterator.class
+SHA1-Digest: F0dv6tJAKrx3OrRdXoLz69EcxKI=
+
+Name: org/mozilla/javascript/NativeObject.class
+SHA1-Digest: WrMsid8Re5v4hgTPnc7USEgX1pA=
+
+Name: org/mozilla/javascript/optimizer/BodyCodegen.class
+SHA1-Digest: tl5+7vjSMHPh+6WQdWUdjXN/Mhs=
+
+Name: org/mozilla/javascript/JavaMembers$MethodSignature.class
+SHA1-Digest: jv/gFgOtVe4EYTHQ4ilUFqZDMek=
+
+Name: org/mozilla/javascript/Node$NumberNode.class
+SHA1-Digest: pfiGaqospSB9YcXRD0Cdes32Wgc=
+
+Name: org/mozilla/javascript/NativeWith.class
+SHA1-Digest: b6SU21fEiQR4MSJ0IG3XdodM0Eo=
+
