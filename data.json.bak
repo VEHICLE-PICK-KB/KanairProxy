@@ -1,6 +1,6 @@
 {
   "timeStamp": {
-    "timeStamp": "2024-02-27 08:59:10"
+    "timeStamp": "2024-03-08 18:07:54"
   },
   "airportList": [
     {
@@ -58,7 +58,7 @@
       }
     },
     {
-      "pouserStatus": "Out of Service",
+      "pouserStatus": "OK",
       "airportCode": "EFSA",
       "fuelPrices": {
         "JET A-1": "NA",

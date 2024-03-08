@@ -20,104 +20,110 @@ import com.google.gson.GsonBuilder;
 public class ProxyPalvelu {
 
     private List<Airport> airportList;
-    private boolean fetchOnnistui = false;
+    private boolean fetchSuccessful = false;
 
     public ProxyPalvelu() {
         this.airportList = new ArrayList<>();
     }
 
     public void aja() {
-        int yritykset = 0;
 
-        while (!fetchOnnistui && yritykset < 2) {
-            try {
-                Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel")
-                        .get();
-                airportList.clear();
-                Elements rows = doc.select("table tbody tr");
+        EmailLogic emailLogic = new EmailLogic();
 
-                Elements headerRow = doc.select("table th");
-                List<String> titles = new ArrayList<>();
-                for (int i = 2; i < headerRow.size(); i++) {
-                    try {
-                        String title = headerRow.get(i).text().trim().toUpperCase();
-                        titles.add(title);
-                    } catch (IndexOutOfBoundsException e) {
-                        System.out.println("Index out of bounds while extracting titles");
-                        e.printStackTrace();
-                    }
+        try {
+            Document doc = Jsoup.connect("https://www.kanair.fi/category/10/ilmailupolttoaineet--aviation-fuel")
+                    .get();
+            airportList.clear();
+            Elements rows = doc.select("table tbody tr");
+
+            Elements headerRow = doc.select("table th");
+            List<String> titles = new ArrayList<>();
+            for (int i = 2; i < headerRow.size(); i++) {
+                try {
+                    String title = headerRow.get(i).text().trim().toUpperCase();
+                    titles.add(title);
+                } catch (IndexOutOfBoundsException e) {
+                    System.out.println("Index out of bounds while extracting titles" + e.getMessage());
+                    updateLog("Index out of bounds while extracting titles" + e.getMessage());
                 }
-
-                for (Element row : rows) {
-                    Elements columns = row.select("td");
-                    if (columns.size() >= 6) {
-                        String pouserStatus = columns.get(0).text().trim();
-                        String airportCode = columns.get(1).text().trim();
-
-                        if (!airportCode.matches("[A-Za-z0-9]+")) {
-                            continue;
-                        }
-
-                        Map<String, String> fuelPricesMap = new HashMap<>();
-                        for (int i = 2; i < columns.size(); i++) {
-                            try {
-                                String fuelType = titles.get(i - 2);
-                                String fuelPrice = columns.get(i).text().trim().replace("\"", "").replace(",", ".");
-
-                                if (!fuelType.isEmpty()) {
-                                    if (fuelPrice.matches("-?\\d+(\\.\\d+)?") || !fuelPrice.equalsIgnoreCase("n/a")) {
-                                        fuelPrice = fuelPrice.equals("-") ? "NA" : fuelPrice;
-                                        fuelPricesMap.put(fuelType, fuelPrice);
-                                    } else {
-                                        fuelPricesMap.put(fuelType, "NA");
-                                    }
-                                }
-                            } catch (IndexOutOfBoundsException e) {
-                                System.out.println("Index out of bounds while processing row: " + row);
-                                e.printStackTrace();
-                            }
-                        }
-
-                        Airport airport = new Airport(pouserStatus, airportCode, fuelPricesMap);
-                        airportList.add(airport);
-                    }
-                }
-                kirjoitaLokiin("Tietojen haku onnistui.");
-                fetchOnnistui = true;
-            } catch (Exception e) {
-                System.out.println("Virhe haettaessa tietoja: " + e.getMessage());
-                kirjoitaLokiin("Virhe haettaessa tietoja: " + e.getMessage());
-                yritykset++;
             }
+
+            for (Element row : rows) {
+                Elements columns = row.select("td");
+                if (columns.size() >= 6) {
+                    String pouserStatus = columns.get(0).text().trim();
+                    String airportCode = columns.get(1).text().trim();
+
+                    if (!airportCode.matches("[A-Za-z0-9]+")) {
+                        continue;
+                    }
+
+                    Map<String, String> fuelPricesMap = new HashMap<>();
+                    for (int i = 2; i < columns.size(); i++) {
+                        try {
+                            String fuelType = titles.get(i - 2);
+                            String fuelPrice = columns.get(i).text().trim().replace("\"", "").replace(",", ".");
+
+                            if (!fuelType.isEmpty()) {
+                                if (fuelPrice.matches("-?\\d+(\\.\\d+)?") || !fuelPrice.equalsIgnoreCase("n/a")) {
+                                    fuelPrice = fuelPrice.equals("-") ? "NA" : fuelPrice;
+                                    fuelPricesMap.put(fuelType, fuelPrice);
+                                } else {
+                                    fuelPricesMap.put(fuelType, "NA");
+                                }
+                            }
+                        } catch (IndexOutOfBoundsException e) {
+                            updateLog("Index out of bounds while processing row: " + row + ". " + e.getMessage());
+                        }
+                    }
+
+                    Airport airport = new Airport(pouserStatus, airportCode, fuelPricesMap);
+                    airportList.add(airport);
+                }
+            }
+            updateLog("Fetch was successful.");
+            fetchSuccessful = true;
+        } catch (Exception e) {
+            System.out.println("Error while fetching data: " + e.getMessage());
+            updateLog("Error while fetching data: " + e.getMessage());
         }
-        if (!fetchOnnistui) {
-            System.out.println("Tietojen haku epäonnistui.");
-            kirjoitaLokiin("Tietojen haku epäonnistui.");
+
+        if (!fetchSuccessful) {
+            emailLogic.addError();
+        } else {
+            emailLogic.resetCounter();
         }
     }
 
-    private void kirjoitaLokiin(String viesti) {
-        LocalDateTime aikaleima = LocalDateTime.now();
+    public void updateLog(String message) {
+        LocalDateTime timestamp = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String aikaString = aikaleima.format(formatter);
-        try (FileWriter writer = new FileWriter("lokiteksti.txt", true)) {
-            writer.write("[" + aikaString + "] " + viesti + "\n");
+        String timeString = timestamp.format(formatter);
+
+        try (FileWriter writer = new FileWriter("log.txt", true)) {
+            writer.write("[" + timeString + "] " + message + "\n");
+            StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+            if (stackTrace.length > 2) {
+                StackTraceElement element = stackTrace[2];
+                writer.write("   at " + element.getClassName() + "." + element.getMethodName() +
+                        "(" + element.getFileName() + ":" + element.getLineNumber() + ")\n");
+            }
         } catch (IOException e) {
-            System.out.println("Virhe lokitiedoston kirjoittamisessa: " + e.getMessage());
+            System.out.println("Error while logging: " + e.getMessage());
         }
     }
 
-    private void tallennaJsonTiedostoon(String data, String tiedosto) {
-        try (FileWriter writer = new FileWriter(tiedosto)) {
+    private void saveJsonInFile(String data, String file) {
+        try (FileWriter writer = new FileWriter(file)) {
             writer.write(data);
         } catch (IOException e) {
-            System.out.println("Virhe tallennettaessa JSON-dataa tiedostoon: " + e.getMessage());
+            System.out.println("Error while saving the Json object to a file: " + e.getMessage());
         }
     }
 
     public String generateJsonOutput() {
-        if (!fetchOnnistui) {
-            System.out.println("Tietoja ei päivitetty JSON-tiedostoihin, koska tietojen hakeminen epäonnistui.");
+        if (!fetchSuccessful) {
+            System.out.println("Data wasn't updated, fetch was unsuccessful");
             return "";
         }
 
@@ -132,8 +138,8 @@ public class ProxyPalvelu {
         JsonOutput jsonOutput = new JsonOutput(timeStamp, airportList);
         String jsonData = gson.toJson(jsonOutput);
 
-        tallennaJsonTiedostoon(jsonData, "data.json");
-        tallennaJsonTiedostoon(jsonData, "data.json.bak");
+        saveJsonInFile(jsonData, "data.json");
+        saveJsonInFile(jsonData, "data.json.bak");
 
         return jsonData;
     }

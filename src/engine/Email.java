@@ -24,7 +24,9 @@ public class Email {
      * @param salasana
      * @throws Exception
      */
-    public static void laheta(String vastaanottajanEmail, String otsikko, String emailinSisalto) throws Exception {
+    public static void send(String receiverEmail, String title, String emailBody) throws Exception {
+
+        ProxyPalvelu proxyPalvelu = new ProxyPalvelu();
 
         String from = "";
         String pass = "";
@@ -35,9 +37,7 @@ public class Email {
 
         Properties properties = System.getProperties();
         properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
-
         properties.put("mail.smtp.starttls.required", "true");
-
         properties.put("mail.debug", "true");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.ssl.trust", "mail.kapsi.fi");
@@ -61,22 +61,23 @@ public class Email {
             message.setFrom(new InternetAddress("polttoaineprojektiop2@gmail.com"));
 
             // Viestin vastaanottajan asettaminen
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(vastaanottajanEmail));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiverEmail));
 
             // Viestin otsikko eli subject
-            message.setSubject(otsikko);
+            message.setSubject(title);
 
-            message.setText(emailinSisalto);
+            message.setText(emailBody);
 
             Transport transport = session.getTransport("smtp");
             transport.connect(host, from, pass);
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
 
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println("Error while sending.");
+            proxyPalvelu.updateLog("Error while sending email: " + e.getMessage());
 
-            System.out.println("Virhe lahetyksesessa.");
         }
     }
 }
