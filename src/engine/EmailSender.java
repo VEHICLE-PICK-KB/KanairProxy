@@ -6,7 +6,7 @@ public class EmailSender {
         ProxyPalvelu proxyPalvelu = new ProxyPalvelu();
         String reciever = "polttoaineprojektiop2@gmail.com";
         try {
-            Email.send(reciever, "Testi", emailBody);
+            Email.send(reciever, "Fuel fetcher has been down for 24h", emailBody);
             System.out.println("Email was sent");
             proxyPalvelu.updateLog("Email sent to " + reciever);
         } catch (Exception ex) {
