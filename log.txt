@@ -1,0 +1,2 @@
+[2024-03-08 18:07:53] Fetch was successful.
+   at engine.ProxyPalvelu.aja(ProxyPalvelu.java:84)
