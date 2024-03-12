@@ -100,7 +100,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.op-black.ProxyPalvelu</mainClass> <!-- Replace with your main class -->
+                            <mainClass>engine.ProxyPalvelu</mainClass> <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                     <descriptorRefs>

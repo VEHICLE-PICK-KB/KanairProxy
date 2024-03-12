@@ -1,8 +1,8 @@
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/Airport.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/ProxyPalvelu.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/FuelPrices.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/ErrorEmail.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/EmailSender.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/WebBotHandler.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/TimeStamp.java
-/Users/zoka/Desktop/GitHub/Proxy/src/main/java/LocalDateTimeAdapter.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/Airport.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/ErrorEmail.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/WebBotHandler.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/TimeStamp.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/LocalDateTimeAdapter.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/FuelPrices.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/EmailSender.java
+/Users/zoka/Desktop/GitHub/Proxy/src/main/java/engine/ProxyPalvelu.java
