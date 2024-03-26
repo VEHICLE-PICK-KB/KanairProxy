@@ -29,7 +29,7 @@ public class Email {
         ProxyPalvelu proxyPalvelu = new ProxyPalvelu();
 
         String from = "";
-        String pass = System.getenv("SALASANA"); // Password from environmental variable
+        String pass = System.getenv("salasana"); // Password from environmental variable
         from = "jtjuslin";
 
         String host = "mail.kapsi.fi";
