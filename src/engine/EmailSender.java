@@ -1,10 +1,10 @@
 package engine;
 
 public class EmailSender {
-
+    //Configuring email sending parameters
     public static void sendEmail(String emailBody) {
         ProxyPalvelu proxyPalvelu = new ProxyPalvelu();
-        String reciever = "polttoaineprojektiop2@gmail.com";
+        String reciever = "jukka.juslin@haaga-helia.fi";
         try {
             Email.send(reciever, "Fuel fetcher has been down for 24h", emailBody);
             System.out.println("Email was sent");

@@ -9,13 +9,13 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 /**
- * Luokka, joka kasittelee emailin lahetyksen
+ * Class that handles the email sending operartion
  *
  * @author Jukka Juslin
  */
 public class Email {
     /**
-     * Metodi joka hoitaa viestin lahetyksen, kovakoodattuna smtp.helia.fi.
+     * Method that handles sending the message (smtp.helia.fi.)
      *
      * @param to
      * @param from
@@ -29,8 +29,7 @@ public class Email {
         ProxyPalvelu proxyPalvelu = new ProxyPalvelu();
 
         String from = "";
-        String pass = "";
-        pass = "Tampere2023";
+        String pass = System.getenv("SALASANA"); // Password from environmental variable
         from = "jtjuslin";
 
         String host = "mail.kapsi.fi";
@@ -46,24 +45,21 @@ public class Email {
         properties.put("mail.smtp.host", host);
         properties.put("mail.smtp.port", "465");
         properties.put("mail.smtp.auth", "true");
-        properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.starttls.required", "true");
-        properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
         properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 
-        // Haetaan oletus session olio
+        // Get the default session object
         Session session = Session.getDefaultInstance(properties);
 
         try {
-            // Luo oletus MimeMessage olio
+            // Create default MimeMessage object
             MimeMessage message = new MimeMessage(session);
 
-            message.setFrom(new InternetAddress("polttoaineprojektiop2@gmail.com"));
+            message.setFrom(new InternetAddress("jukka.juslin@haaga-helia.fi"));
 
-            // Viestin vastaanottajan asettaminen
+            // Assign message receiver
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiverEmail));
 
-            // Viestin otsikko eli subject
+            // Message Subject
             message.setSubject(title);
 
             message.setText(emailBody);

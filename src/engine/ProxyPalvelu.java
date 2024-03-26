@@ -171,8 +171,7 @@ public class ProxyPalvelu {
         + "Access-Control-Allow-Origin: *\n"
         + "Access-Control-Allow-Methods: GET, POST, OPTIONS\n"
         + "Access-Control-Allow-Headers: Content-Type\n";
-
-        // Tulostetaan headerit ja JSON-data
+        
         System.out.println(header + jsonData);
 
         // Saves the JSON data into two files, a primary and a backup.
