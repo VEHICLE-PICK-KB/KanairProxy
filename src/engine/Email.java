@@ -30,10 +30,10 @@ public class Email {
 
         String from = "";
         String pass = "";
-        pass = "Tampere2023";
-        from = "jtjuslin";
+        pass = System.getenv("EMAIL_PASS");
+        from = System.getenv("EMAIL_USER");
 
-        String host = "mail.kapsi.fi";
+        String host = System.getenv("EMAIL_HOST");
 
         Properties properties = System.getProperties();
         properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
