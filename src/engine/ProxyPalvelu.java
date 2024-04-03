@@ -1,4 +1,4 @@
-package engine;
+
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -172,7 +172,7 @@ public class ProxyPalvelu {
         + "Access-Control-Allow-Methods: GET, POST, OPTIONS\n"
         + "Access-Control-Allow-Headers: Content-Type\n";
         
-        System.out.println(header + jsonData);
+        System.out.println(jsonData);
 
         // Saves the JSON data into two files, a primary and a backup.
         saveJsonInFile(jsonData, "/var/www/10/jtjuslin/sites/jtjuslin.kapsi.fi/www/kananen/data.json");

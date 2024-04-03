@@ -1,4 +1,4 @@
-package engine;
+
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.LinkedList;
 
 public class EmailLogic {
 
@@ -67,23 +68,25 @@ public class EmailLogic {
     }
 
     private static String readLastLines(String filePath, int linesToRead) {
-        StringBuilder lastLines = new StringBuilder();
+    LinkedList<String> lastLines = new LinkedList<>();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            int lineCount = 0;
+    try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+        String line;
 
-            while ((line = reader.readLine()) != null) {
-                lineCount++;
-                if (lineCount > Math.max(0, lineCount - linesToRead)) {
-                    lastLines.append(line).append("\n");
-                }
+        while ((line = reader.readLine()) != null) {
+            if (lastLines.size() == linesToRead) {
+                lastLines.poll(); // Remove the first line to keep the size fixed
             }
-
-        } catch (IOException e) {
-            System.out.println("Error reading log file: " + e.getMessage());
+            lastLines.add(line); // Add the new line
         }
-
-        return lastLines.toString();
+    } catch (IOException e) {
+        System.out.println("Error reading log file: " + e.getMessage());
     }
+
+    StringBuilder result = new StringBuilder();
+    for (String lastLine : lastLines) {
+        result.append(lastLine).append("\n");
+    }
+    return result.toString();
+}
 }
