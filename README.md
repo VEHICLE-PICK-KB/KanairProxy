@@ -1,4 +1,3 @@
-# FrontEnd
 # Lentopaikat.fi sovelluksen kehitys
 
 Kehittäjät:
